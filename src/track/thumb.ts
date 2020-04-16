@@ -61,13 +61,13 @@ export class ScrollbarThumb implements I.ScrollbarThumb {
       case TrackDirection.X:
         return {
           width: `${this.displaySize}px`,
-          '-transform': `translate3d(${this.offset}px, 0, 0)`,
+          '-transform': `translate2d(${this.offset}px, 0)`,
         };
 
       case TrackDirection.Y:
         return {
           height: `${this.displaySize}px`,
-          '-transform': `translate3d(0, ${this.offset}px, 0)`,
+          '-transform': `translate2d(0, ${this.offset}px)`,
         };
 
       default:
