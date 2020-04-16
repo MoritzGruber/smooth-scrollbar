@@ -42,7 +42,7 @@ export function setPosition(
   offset.y = y;
 
   setStyle(contentEl, {
-    '-transform': `translate3d(${-x}px, ${-y}px, 0)`,
+    '-transform': `translate2d(${-x}px, ${-y}px)`,
   });
 
   track.update();
