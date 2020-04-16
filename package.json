@@ -36,7 +36,8 @@
     "scrollbar",
     "customize",
     "acceleration",
-    "performance"
+    "performance",
+    "test"
   ],
   "author": "Dolphin Wood <dolphin.w.e@gmail.com>",
   "license": "MIT",
