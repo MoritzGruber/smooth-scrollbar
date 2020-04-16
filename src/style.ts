@@ -8,8 +8,8 @@ const SCROLLBAR_STYLE = `
 }
 
 .scroll-content {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  -webkit-transform: translate2d(0, 0);
+          transform: translate2d(0, 0);
 }
 
 .scrollbar-track {
