@@ -25,7 +25,7 @@ export class Bounce {
       const scaleRatio = size.container.width / (size.container.width + Math.abs(x));
 
       setStyle(track.xAxis.thumb.element, {
-        '-transform': `translate3d(${track.xAxis.thumb.offset}px, 0, 0) scale3d(${scaleRatio}, 1, 1)`,
+        '-transform': `translate2d(${track.xAxis.thumb.offset}px, 0) scale2d(${scaleRatio}, 1)`,
         '-transform-origin': x < 0 ? 'left' : 'right',
       });
     }
@@ -36,7 +36,7 @@ export class Bounce {
       const scaleRatio = size.container.height / (size.container.height + Math.abs(y));
 
       setStyle(track.yAxis.thumb.element, {
-        '-transform': `translate3d(0, ${track.yAxis.thumb.offset}px, 0) scale3d(1, ${scaleRatio}, 1)`,
+        '-transform': `translate2d(0, ${track.yAxis.thumb.offset}px) scale2d(1, ${scaleRatio})`,
         '-transform-origin': y < 0 ? 'top' : 'bottom',
       });
     }
